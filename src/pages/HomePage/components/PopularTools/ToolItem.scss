@@ -1,0 +1,137 @@
+@import '../../../vars.scss';
+
+.tools-item {
+  &--lg-size {
+    width: 392px;
+    height: 294px;
+  }
+  border-radius: 15px;
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.2s linear 0s;
+  &:hover {
+    transform: translate(0, -20px);
+  }
+  &--offset {
+    padding: 33px;
+  }
+  &__icon {
+    &--size {
+      width: 64px;
+      height: 64px;
+    }
+    &--offset {
+      margin-right: 30px;
+    }
+  }
+  &__name {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: $textTileMutedColor;
+    &--active {
+      color: $textColor;
+    }
+  }
+  &__pay {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: rgba(255, 165, 55, 0.55);
+    &--active {
+      color: #ffa537;
+    }
+  }
+  &__info {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: $textMutedColor;
+    padding-top: 30px;
+    &--active {
+      color: $textTileMutedColor;
+    }
+  }
+
+  &__like {
+    min-width: 42px;
+    height: 42px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: inherit;
+    &--active {
+      background: #283036;
+      box-shadow: 0px 5px 10px -3px rgba(18, 18, 18, 0.15);
+    }
+    &--img-offset {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  &__footer--offset {
+    margin-top: 30px;
+  }
+  &__add-outline {
+    margin-left: 12px;
+    cursor: pointer;
+  }
+}
+
+.btn__item {
+  &--size {
+    width: 106px;
+    height: 42px;
+  }
+}
+
+.glass__tool-item {
+  position: absolute;
+  border-radius: 13px;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+  margin: auto;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  z-index: -1;
+  background: rgba(40, 48, 54, 0.6);
+  &--border {
+    position: absolute;
+    margin: auto;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background: linear-gradient(
+      118.49deg,
+      rgba(255, 255, 255, 0.08) -2.11%,
+      rgba(255, 255, 255, 0) 28.55%,
+      rgba(255, 255, 255, 0.05) 44.69%,
+      rgba(255, 255, 255, 0) 96.78%
+    );
+    z-index: -5;
+    backdrop-filter: blur(25px);
+  }
+  &--light {
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: rgba(255, 110, 48, 0.6);
+    right: 16px;
+    top: -6px;
+    filter: blur(25px);
+    z-index: -10;
+  }
+}

@@ -1,0 +1,52 @@
+@import '../../../vars.scss';
+
+.conteiner__newcomer--offset {
+  margin-top: 220px;
+}
+
+.half-block {
+  width: 50%;
+}
+
+.text__title {
+  &--newcomer {
+    font-size: 48px;
+    line-height: 130%;
+    color: $textColor;
+  }
+}
+
+.text__subTitle {
+  &--newcomer {
+    line-height: 30px;
+    font-weight: 500;
+    font-size: 18px;
+    color: $textMutedColor;
+    width: 427px;
+  }
+  &--newcomer-offset {
+    margin-top: 30px;
+  }
+}
+
+.btn__newcomer {
+  &--size {
+    width: 198px;
+    height: 58px;
+  }
+  &--offset {
+    margin-top: 60px;
+  }
+}
+
+.conteiner__flex-row--newcomer-offset {
+  flex-wrap: wrap;
+  row-gap: 50px;
+  column-gap: 23px;
+  margin-top: 0px;
+}
+
+.tools-item--lt-size {
+  width: 288px;
+  height: 284px;
+}

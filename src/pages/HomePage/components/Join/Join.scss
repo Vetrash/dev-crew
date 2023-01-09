@@ -1,0 +1,51 @@
+@import '../../../vars.scss';
+
+.conteiner__join {
+  &--size {
+    width: 553px;
+  }
+  &--offset {
+    margin-top: 251px;
+    margin-bottom: 240px;
+  }
+}
+
+.text {
+  &__title--join-style {
+    font-size: 48px;
+    line-height: 130%;
+    color: $textColor;
+  }
+  &__subTitle {
+    &--join-style {
+      font-weight: 500;
+      color: $textMutedColor;
+    }
+    &--join-offset {
+      margin-top: 25px;
+    }
+  }
+}
+.input-block {
+  &__join {
+    &--size {
+      width: 549px;
+    }
+    &--offset {
+      margin-top: 100px;
+    }
+  }
+  &__input-space--join-offset {
+    margin-left: 24px;
+  }
+}
+
+.btn {
+  &--join-size {
+    width: 130px;
+    height: 48px;
+  }
+  &--join-offset {
+    margin-right: 12px;
+  }
+}

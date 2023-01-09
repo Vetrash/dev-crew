@@ -1,0 +1,121 @@
+@import './vars.scss';
+
+.logo {
+  margin-top: auto;
+  margin-bottom: auto;
+  &--norm-size {
+    @extend .logo;
+    width: 140px;
+    height: 38px;
+  }
+}
+
+.conteiner {
+  &__flex-row {
+    display: flex;
+    flex-direction: row;
+    &--gap-col-40 {
+      column-gap: 40px;
+    }
+    &--space-between {
+      @extend .conteiner__flex-row;
+      justify-content: space-between;
+    }
+  }
+  &--x-center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &--y-center {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  &--work-width-page {
+    width: 85vw;
+  }
+  &--relative {
+    position: relative;
+  }
+}
+.btn {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: $textColor;
+  opacity: 0.78;
+  background: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  &--active {
+    opacity: 1;
+    background: $activeColor;
+  }
+}
+
+.text {
+  font-family: 'Poppins';
+    font-style: normal;
+  &__title {
+    @extend .text;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 140%;
+    color: $textColor;
+  }
+  &__subTitle {
+    @extend .text;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: $textMutedColor;
+  }
+  &--center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &--orangeText {
+    color: #ff6e30;
+  }
+}
+
+.input-block {
+  height: 64px;
+  border-radius: 14px;
+  background: $inputColor;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  &::after {
+    position: absolute;
+    top: -1.5px;
+    bottom: -1.5px;
+    left: -1.5px;
+    right: -1.5px;
+    background: linear-gradient(90.89deg, rgba(255, 255, 255, 0.1) -1.67%, rgba(255, 255, 255, 0) 103.73%);
+    content: '';
+    z-index: -1;
+    border-radius: 15px;
+  }
+  &__input-space {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: $inputMutedColor;
+    background: none;
+    flex: 1 0 auto;
+    padding-right: 20px;
+  }
+}
+
+.item{
+  &--blink{display: none;}
+  &--showblock{display: block}
+  &--pointer{cursor: pointer;}
+}

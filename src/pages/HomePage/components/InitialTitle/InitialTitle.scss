@@ -1,0 +1,73 @@
+@import '../../../vars.scss';
+
+.initial-title--offset {
+  padding-top: 104px;
+}
+
+.conteinerTitle:first-child {
+  padding-top: 80px;
+}
+
+.text__subtitle--initial-size {
+  width: 487px;
+}
+.text__subtitle--initial-offset {
+  padding-top: 30px;
+}
+
+.input-block {
+  &--search-size {
+    width: 498px;
+  }
+  &__search-icon {
+    display: block;
+    min-width: 24px;
+    height: 24px;
+    &--offset {
+      @extend .input-block__search-icon;
+      padding-left: 18px;
+      padding-right: 10px;
+    }
+  }
+  &--offset-search {
+    margin-top: 60px;
+  }
+}
+
+.btn {
+  &--search-offset {
+    margin-right: 11px;
+  }
+  &--search-size {
+    width: 130px;
+    height: 48px;
+  }
+  &--home-size {
+    width: 118px;
+    height: 48px;
+  }
+}
+
+.abs_Illustration {
+  position: absolute;
+  top: 55px;
+  right: 41px;
+}
+
+.socWeb {
+  display: flex;
+  flex-direction: row;
+  column-gap: 8px;
+  &__item--offset {
+    padding: 11px;
+    padding-left: 11px;
+  }
+  &__icon--size {
+    width: 36px;
+    height: 36px;
+  }
+  &--offset {
+    @extend .socWeb;
+    padding-top: 110px;
+  }
+}

@@ -1,0 +1,43 @@
+@import '../../../vars.scss';
+
+
+.text__tools {
+  &--title-size {
+    font-size: 48px;
+  }
+  &--title-offset {
+    margin-top: 171px;
+  }
+}
+
+.text__tools--subtitle-size {
+  font-weight: 400;
+  padding-top: 25px;
+}
+
+.conteiner__flex-row--tool-offset {
+  flex-wrap: wrap;
+  row-gap: 120px;
+  column-gap: 23px;
+  margin-top: 90px;
+}
+
+.btn__tools {
+  &--size {
+    width: 184px;
+    height: 64px;
+  }
+  &--decor {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: $activeColor;
+  }
+  &--offset {
+    margin: 100px auto 0px auto;
+    display: block;
+  }
+}
